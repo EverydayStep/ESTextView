@@ -14,9 +14,12 @@
 		974416721F395E9A001407DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 974416711F395E9A001407DF /* Assets.xcassets */; };
 		974416751F395E9B001407DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 974416731F395E9A001407DF /* LaunchScreen.storyboard */; };
 		9744167F1F395ED2001407DF /* ESTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9744167E1F395ED2001407DF /* ESTextView.m */; };
+		F45ED5F824B8BF13AF038363 /* libPods-ESTextView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C90044A0354F498FB8831E62 /* libPods-ESTextView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		538503E0DA9A4052268A0E8F /* Pods-ESTextView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESTextView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ESTextView/Pods-ESTextView.release.xcconfig"; sourceTree = "<group>"; };
+		7B8C2CCCA86EFFDDB38979E7 /* Pods-ESTextView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESTextView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESTextView/Pods-ESTextView.debug.xcconfig"; sourceTree = "<group>"; };
 		974416621F395E9A001407DF /* ESTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		974416661F395E9A001407DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		974416681F395E9A001407DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		974416761F395E9B001407DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9744167D1F395ED2001407DF /* ESTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTextView.h; sourceTree = "<group>"; };
 		9744167E1F395ED2001407DF /* ESTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESTextView.m; sourceTree = "<group>"; };
+		C90044A0354F498FB8831E62 /* libPods-ESTextView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ESTextView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45ED5F824B8BF13AF038363 /* libPods-ESTextView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ABD14E98D2ED01D8FC79843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C90044A0354F498FB8831E62 /* libPods-ESTextView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		974416591F395E9A001407DF = {
 			isa = PBXGroup;
 			children = (
 				974416641F395E9A001407DF /* ESTextView */,
 				974416631F395E9A001407DF /* Products */,
+				9E5B5ECD894C2CB8A20EC39A /* Pods */,
+				1ABD14E98D2ED01D8FC79843 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +107,15 @@
 			path = ESTextView;
 			sourceTree = "<group>";
 		};
+		9E5B5ECD894C2CB8A20EC39A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B8C2CCCA86EFFDDB38979E7 /* Pods-ESTextView.debug.xcconfig */,
+				538503E0DA9A4052268A0E8F /* Pods-ESTextView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 974416791F395E9B001407DF /* Build configuration list for PBXNativeTarget "ESTextView" */;
 			buildPhases = (
+				8EBF011D108B1271ABE41086 /* [CP] Check Pods Manifest.lock */,
 				9744165E1F395E9A001407DF /* Sources */,
 				9744165F1F395E9A001407DF /* Frameworks */,
 				974416601F395E9A001407DF /* Resources */,
+				78CD241684B8C667AD6A7C66 /* [CP] Embed Pods Frameworks */,
+				D9E3BEBADC02C1C835DEEA24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,6 +185,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78CD241684B8C667AD6A7C66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESTextView/Pods-ESTextView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EBF011D108B1271ABE41086 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ESTextView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9E3BEBADC02C1C835DEEA24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESTextView/Pods-ESTextView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9744165E1F395E9A001407DF /* Sources */ = {
@@ -287,6 +365,7 @@
 		};
 		9744167A1F395E9B001407DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B8C2CCCA86EFFDDB38979E7 /* Pods-ESTextView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EGNU2YN2XY;
@@ -299,6 +378,7 @@
 		};
 		9744167B1F395E9B001407DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538503E0DA9A4052268A0E8F /* Pods-ESTextView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EGNU2YN2XY;

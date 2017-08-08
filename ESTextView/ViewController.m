@@ -19,6 +19,9 @@
     [super viewDidLoad];
     
     ESTextView *textView = [[ESTextView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    textView.placeholder = @"aaaa";
+    textView.placeholderColor = [UIColor redColor];
+    textView.tintColor = [UIColor yellowColor];
     [self.view addSubview:textView];
     // Do any additional setup after loading the view, typically from a nib.
 }
