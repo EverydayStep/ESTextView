@@ -6,5 +6,5 @@ target 'ESTextView' do
   # use_frameworks!
 
   # Pods for ESTextView
-  pod 'Masonry', '1.0.2'
+  pod 'Masonry', ‘1.1.0’
 end
