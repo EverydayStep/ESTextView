@@ -48,8 +48,8 @@
         make.edges.equalTo(self);
     }];
     [self.placeholderLab mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(5);
-        make.top.mas_equalTo(8);
+        make.left.equalTo(self.textView).offset(5);
+        make.top.equalTo(self.textView).offset(8);
     }];
 }
 
