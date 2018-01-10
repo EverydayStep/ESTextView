@@ -91,8 +91,11 @@
 }
 
 - (void)setText:(NSString *)text {
-    _text = text;
-    self.textView.text = _text;
+    self.textView.text = text;
+}
+
+- (NSString *)text {
+    return self.textView.text;
 }
 
 - (void)setPlaceholder:(NSString *)placeholder {
