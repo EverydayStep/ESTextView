@@ -92,6 +92,7 @@
 
 - (void)setText:(NSString *)text {
     self.textView.text = text;
+    self.placeholderLab.hidden = self.textView.text.length > 0;
 }
 
 - (NSString *)text {
